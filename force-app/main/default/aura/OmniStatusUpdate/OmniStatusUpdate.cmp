@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem" access="global" >
+    <lightning:omniToolkitAPI aura:id="omniToolkit" />  
+    <aura:attribute name="onlineStatus" type="String" />
+    <aura:handler event="lightning:omniChannelStatusChanged" action="{! c.onStatusChanged }"/>
+</aura:component>

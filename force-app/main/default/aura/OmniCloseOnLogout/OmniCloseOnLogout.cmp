@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem" access="global" >
+    <lightning:omniToolkitAPI aura:id="omniToolkit" />  
+    <lightning:workspaceAPI aura:id="workspace" />
+    <aura:handler event="lightning:omniChannelLogout" action="{! c.onLogout }"/>
+</aura:component>
